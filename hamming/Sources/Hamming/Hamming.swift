@@ -12,7 +12,6 @@ struct Hamming {
     let againstArray = Array(against)
     var diffCnt = 0
     
-//    for position in 0...originalArray.count-1 where originalArray != againstArray{
     for position in stride(from: 0, through: originalArray.count - 1, by: 1) where originalArray != againstArray{
       if originalArray[position] != againstArray[position] {
         diffCnt += 1
