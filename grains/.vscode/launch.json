@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Test Grains",
+      "program": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+      "args": [
+        ".build/debug/GrainsPackageTests.xctest"
+      ],
+      "cwd": "${workspaceFolder:grains}",
+      "preLaunchTask": "swift: Build All"
+    }
+  ]
+}

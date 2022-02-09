@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Test Hamming",
+      "program": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+      "args": [
+        ".build/debug/HammingPackageTests.xctest"
+      ],
+      "cwd": "${workspaceFolder:hamming}",
+      "preLaunchTask": "swift: Build All"
+    }
+  ]
+}
